@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="bg-[#DC6B19] w-screen h-screen flex justify-start items-center flex-col pt-10 overflow-x-hidden">
       <h1 className="text-4xl font-bold mb-4 selection:bg-yellow-300">
-        Manage Our Todo
+        My Todo List
       </h1>
       <div className="sm:w-[40%] w-[100%]  rounded py-2 sm:px-4 px-2 shadow-lg">
         <Input />
