@@ -67,7 +67,7 @@ function Todos() {
                 todoUpdating(value.id, value.isChange, value.isComplete)
               }
             >
-              {value.isChange ? "📂" : "✔️"}
+              {value.isChange ? "✏️" : "✔️"}
             </button>
             <button
               className={`cursor-pointer h-8 w-8 hover:bg-[#d6d6d6] transition-all ${
