@@ -16,6 +16,9 @@ function Todos() {
   };
 
   const isCompleted = (id, bool) => {
+    if (!bool) {
+      dispatch(isChange({ id: id, change: true }));
+    }
     dispatch(isComplete({ idVal: id, boolVal: !bool }));
   };
 
@@ -40,9 +43,7 @@ function Todos() {
             <input
               type="checkbox"
               className="cursor-pointer"
-              onChange={() =>
-                isCompleted(value.id, value.isComplete, value.isChange)
-              }
+              onChange={() => isCompleted(value.id, value.isComplete)}
               checked={value.isComplete}
             />
             <input
